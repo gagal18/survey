@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 id="title">Survey about 2020</h1>
+        <p id="id">Write down your thoughts</p>
+      </header>
+      <div class="body">
+      <form id="survey-form">
+        <div id="form-group">
+          <label for="name" id="name-label"><p class="desc">Name</p></label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div id="form-group">
+          <label for="email" id="email-label"><p class="desc">Email</p></label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+        <div id="form-group">
+          <label id="number-label" for="number"
+            ><p class="desc">Age<span class="clue">(optional)</span></p></label
+          >
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="10"
+            max="99"
+            class="form-control"
+            placeholder="Age"
+          />
+        </div>
+        <div id="form-group">
+          <p class="desc">Which option best describes the past year?</p>
+          <select id="dropdown" name="role" class="form-control" required>
+            <option disabled selected value>Select your opinion</option>
+            <option value="awesome">Awesome</option>
+            <option value="great">Great</option>
+            <option value="good">Good</option>
+            <option value="poor">Poor</option>
+            <option value="bad">Bad</option>
+            <option value="preferNo">Prefer not to say</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div id="form-group">
+            <p class="desc">Was this the best year</p>
+                 <label>
+        <input
+          name="user-recommend"
+          value="definitely"
+          type="radio"
+          class="input-radio"
+          checked
+        />Definitely</label
+      >
+      <label>
+        <input
+          name="user-recommend"
+          value="maybe"
+          type="radio"
+          class="input-radio"
+        />Maybe</label
+      >
+
+      <label>
+          <input
+          name="user-recommend"
+          value="not-sure"
+          type="radio"
+          class="input-radio"
+        />Not sure</label>
+              <label>
+          <input
+          name="user-recommend"
+          value="no"
+          type="radio"
+          class="input-radio"
+        />No</label>
+             <label>
+          <input
+          name="user-recommend"
+          value="no-say"
+          type="radio"
+          class="input-radio"
+        />Prefer not to say</label>
+             </div>
+     <div id="form-group">
+         <p class="desc">What are the things that you missed in this year?</p>
+      <label>
+          <input
+          name="prefer"
+          value="grades"
+          type="checkbox"
+          class="input-checkbox"
+        />Better grades</label>
+              <label>
+          <input
+          name="prefer"
+          value="health"
+          type="checkbox"
+          class="input-checkbox"
+        />Better health</label>
+              <label>
+          <input
+          name="prefer"
+          value="hustle"
+          type="checkbox"
+          class="input-checkbox"
+        />More hustle</label>
+              <label>
+          <input
+          name="prefer"
+          value="stress"
+          type="checkbox"
+          class="input-checkbox"
+        />Less stress</label>
+        <label>
+          <input
+          name="prefer"
+          value="party"
+          type="checkbox"
+          class="input-checkbox"
+        />More partying</label>
+     </div>  
+         <div class="form-group">
+      <p class="desc">Any comments or suggestions that we haven't included?</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your comment here..."
+      ></textarea>
+    </div> 
+        <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+      </form>
+      </div>
+    </div>
+  </body>
+</html>
